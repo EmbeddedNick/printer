@@ -33,14 +33,23 @@ public:
         std::cout << "Hello, this is Top adminnistrator" << std::endl;
     }
 };
+
+class CheprunovPrinter : public BasePrinter {
+public:
+    void Print() override
+    {
+        std::cout << "Hello, Cheprunov Stepan" << std::endl;
+    }
+};
+
 int main()
 {
     std::vector<BasePrinter*> units;
     int userChoice;
     bool bRun = true;
-    while(bRun)
+    while (bRun)
     {
-        std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4)?"<<std::endl;
+        std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4) or Name(5)?" << std::endl;
         std::cin >> userChoice;
 
         switch (userChoice)
@@ -55,13 +64,16 @@ int main()
             units.push_back(new StudentPrinter());
             break;
         case 3:
-            for(auto it = units.begin(); it != units.end(); ++it)
+            for (auto it = units.begin(); it != units.end(); ++it)
             {
                 (*it)->Print();
             }
             break;
         case 4:
             units.push_back(new AdminPrinter());
+            break;
+        case 5:
+            units.push_back(new CheprunovPrinter());
             break;
         default:
             break;
