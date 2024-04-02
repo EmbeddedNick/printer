@@ -42,6 +42,14 @@ public:
         std::cout << "Hello, this is Top adminnistrator" << std::endl;
     }
 };
+class OnegynPrinter: public BasePrinter
+   {
+        public:
+        void Print() override
+        {
+            std::cout << "Mongush Aldyn-Sai" << std::endl;
+        }
+    }
 int main()
 {
     std::vector<BasePrinter*> units;
