@@ -49,7 +49,7 @@ int main()
     bool bRun = true;
     while(bRun)
     {
-        std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4)?"<<std::endl;
+        std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4) or Putyatin (5) ?"<<std::endl;
         std::cin >> userChoice;
 
         switch (userChoice)
@@ -71,6 +71,9 @@ int main()
             break;
         case 4:
             units.push_back(new AdminPrinter());
+            break;
+        case 5:
+            units.push_back(new PutyatinPrinter());
             break;
         default:
             break;
