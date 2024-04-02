@@ -8,6 +8,15 @@ public:
     virtual void Print() = 0;
 };
 
+class PutyatinPrinter : public BasePrinter
+{
+public:
+    void Print() override
+    {
+        std::cout << "Putyatin Ilya" << std::endl; 
+    }
+};
+
 class PrepPrinter : public BasePrinter
 {
 public:
