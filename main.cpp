@@ -17,6 +17,15 @@ public:
     }
 };
 
+class BelovPrinter : public BasePrinter
+{
+public:
+    void Print() override
+    {
+        std::cout <<"This is Belov Daniil"<< std::endl;
+    }
+};
+
 class PrepPrinter : public BasePrinter
 {
 public:
