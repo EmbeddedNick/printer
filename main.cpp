@@ -51,7 +51,7 @@ public:
         std::cout << "Hello, this is Top adminnistrator" << std::endl;
     }
 };
-<<<<<<< HEAD
+
 class MongushPrinter: public BasePrinter
 {
         public:
@@ -60,7 +60,7 @@ class MongushPrinter: public BasePrinter
             std::cout << "Mongush Aldyn-Sai" << std::endl;
         }
 };
-=======
+
 
 class CheprunovPrinter : public BasePrinter {
 public:
@@ -70,7 +70,6 @@ public:
     }
 };
 
->>>>>>> origin/Cheprunov_Stepan_branch
 int main()
 {
     std::vector<BasePrinter*> units;
@@ -78,12 +77,9 @@ int main()
     bool bRun = true;
     while (bRun)
     {
-<<<<<<< HEAD
         std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4) or Putyatin (5) or"\
         " Mongush (6) or Belov (7) ?"<<std::endl;
-=======
-        std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4) or Name(5)?" << std::endl;
->>>>>>> origin/Cheprunov_Stepan_branch
+
         std::cin >> userChoice;
 
         switch (userChoice)
@@ -107,7 +103,7 @@ int main()
             units.push_back(new AdminPrinter());
             break;
         case 5:
-<<<<<<< HEAD
+
             units.push_back(new PutyatinPrinter());
             break;
         case 6:
@@ -115,9 +111,9 @@ int main()
             break;
         case 7:
             units.push_back(new BelovPrinter());
-=======
+            break;
+        case 8:
             units.push_back(new CheprunovPrinter());
->>>>>>> origin/Cheprunov_Stepan_branch
             break;
         default:
             break;
