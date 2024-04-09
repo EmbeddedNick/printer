@@ -76,8 +76,6 @@ int main()
     int userChoice;
     bool bRun = true;
 
-    std::cout << "my fix";
-
     while (bRun)
     {
         std::cout << "Do you want to add a prep (1) or student (2) or exit (0) or print all units (3) or administrator (4) or Putyatin (5) or"\
